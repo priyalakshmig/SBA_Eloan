@@ -1,0 +1,27 @@
+DROP DATABASE IF EXISTS loanep;;
+	create DATABASE loanep;
+USE loanep;
+	CREATE TABLE loginu(
+ 	userid varchar(20) primary key,
+ 	password varchar(20) not null 	
+ ); 
+ 
+ INSERT INTO loginu VALUES
+	('user','user');
+ 
+ commit;
+ 
+  
+
+CREATE TABLE Loanapp(
+LOAN_APPL_Num INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+USER_NAME VARCHAR(50),
+LOAN_NAME VARCHAR(100),
+LOAN_AMOUNT_req DECIMAL(10,2),
+LOAN_APPL_DATE DATE,
+LOAN_BUSiness_STRUCTURE VARCHAR(30),
+LOAN_BILL_IND VARCHAR(30),
+LOAN_tax_IND VARCHAR(30),
+MOBILE VARCHAR(30),
+email VARCHAR(30),
+ADDRESS VARCHAR(200));
